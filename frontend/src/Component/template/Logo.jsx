@@ -1,6 +1,6 @@
 import './Logo.css'
 import React from 'react'
-import Logo from '../assents/image/logo.jpeg'
+import Logo from '../../assents/image/logo.jpeg'
 
 export default props => 
 <aside className="logo">

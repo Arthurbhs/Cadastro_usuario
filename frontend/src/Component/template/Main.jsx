@@ -7,6 +7,8 @@ export default props =>
 <div>
     <Header {...props} />
     <main className="content">
-        Conteudo
+       <div className='p-3 mt-3'>
+        {props.children}
+       </div>
     </main>
 </div>
