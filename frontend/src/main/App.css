@@ -1,0 +1,43 @@
+:root {
+   --bg-dark: #1A2F3A;
+   --logo-heigtht: 150px;
+   --header-heigtht: 170px;
+   --aside-width: 1525px;
+   --footer-height: 780px;
+
+   --shadow: 
+   0 2px 23px 0 rgba(0, 0, 0, 0.1)
+   0 2px 49px 0 rgba(0, 0, 0, 0.06)
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: var(--aside-width) 1fr;
+    grid-template-rows:
+    var(--header-heigtht)
+    1fr
+    var(--footer-height);
+    grid-template-areas: 
+    "logo header"
+    "menu content"
+    "menu footer";
+    height: 100vh;
+    background-color:rgb(223, 223, 223)
+}
+aside.logo{
+    grid-area: header;
+}
+aside.menu-area{
+    grid-area: menu;
+}
+
+main.content{
+    grid-area: footer;
+}
