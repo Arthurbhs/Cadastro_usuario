@@ -8,6 +8,7 @@ const headerProps = {
 }
 const baseUrl= 'http://localhost:3001/users'
 const initialState = {
+    
 
     user: {name: '', email: ''},
     list: []
@@ -84,9 +85,9 @@ return (
         <div className="row">
             <div className="col-12 d-flex justify-content-end">
                 <button className="btn btn-primary"
-                onClick={e => this.save()}>Salvar</button>
+                onClick={e => this.save(e)}>Salvar</button>
                 <button className="btn btn-secodary ml-2"
-                  onClick={e => this.clear()}>Cancelar</button>
+                  onClick={e => this.clear(e)}>Cancelar</button>
             </div>
         </div>
     </div>
